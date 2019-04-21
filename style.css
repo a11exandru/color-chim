@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+header {
+	display: flex;
+	background: linear-gradient(to left, #09203f  , #537895);
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+}
+
+header.changeColor {
+	background: black;
+}
+
+.logo {
+	padding: 0.2rem 0.5rem;
+}
+
+.logo-image {
+	width: 170px;
+	height: 70px;
+}
+
+.menu-links,
+.menu-input {
+	display: none;
+}
+
+.fa, .fa-bars {
+	font-size: 2rem!important;
+}
+
+.menu-label {
+	position: absolute;
+	top: 30%;
+	right: 1rem;
+	color: white;
+	cursor: pointer;
+}
+
+.menu-label span:hover {
+	color: gray;
+	transition: 0.2s;
+}
+
+.menu-links a {
+	display: block;
+	color: white;
+	padding: 0.4rem 0.8rem;
+	text-decoration: none;
+	transition: 0.55s;	
+}
+
+.menu-links a:hover {
+	text-decoration: underline;
+}
+
+.menu-links {
+	background: linear-gradient(to left, #a3bded , #6991c7);
+	position: absolute;
+	top: 74px;
+	right: 0;
+	left: 0;
+}
+
+#menu-input:checked + .menu-label + .menu-links {
+	display: block;
+}
+
+/*menu in tablet, desktop mode hehe hack man*/
+
+@media screen and (min-width: 1000px) {
+	#menu-input:checked + .menu-label + .menu-links {
+		display: flex;
+	}
+
+	.menu-label span {
+		display: none;
+	}
+
+	.menu-links {
+		position: relative;
+		display: flex;
+		top: 25%;
+		padding-right: 1rem;
+		background: none;
+		font-size: 1.3rem;
+	}
+
+	.menu-links a:hover {
+		color: gray;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#menu-input:checked + .menu-label + .menu-links {
+		top: 70px;
+}
+}
+
+
+/*footer styling*/
+footer {
+	text-align: center;
+	margin-top: 2rem;
+	background: linear-gradient(to left, #09203f  , #537895);
+	color: white;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.top-arrow {
+	float: right;
+	padding-right: 1rem;
+	font-size: 1.1rem;
+	text-decoration: #09203f;
+	color: black;
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+
+/*styling the content*/
+.title {
+	padding-top: 70px;
+	background: linear-gradient(to left, #09203f  , #537895);
+	height: 100vh;
+	position: relative;
+}
+
+.title-text {
+	position: absolute;
+	font-size: 4rem;
+	top: 47%;
+	left: 50%;
+	/*margin-left: -140px;*/
+	transform: translate(-50%,-40%);
+	color: white;
+	animation: changeColors 8s infinite;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;  
+  border-top: 20px solid lightgray;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -12px;
+}
+
+
+@keyframes changeColors {
+  	0%{color: #FF4B2B;}
+  	25%{color: #fed766;}
+  	50%{color: #a8ff78;}
+  	75%{color: #fe8a71;}
+  	100%{color: #fc6767;}
+}
+
+/*Styling the content section*/
+
+.content {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.definitie {
+	padding: 20px 40px;
+	background-color: red;
+	color: white;
+	height: 100%;
+	position: relative;
+}
+
+.definitie h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	padding: 5rem 0 5rem 0;
+	width: 100%;
+}
+
+.definitie p {
+	position: relative;
+	text-indent: 40px;
+	text-align: justify;
+	top: 20%;
+	padding-bottom: 2rem;
+}
+
+.apareDefinitia {
+	animation: apareDefinitia 3s 1;
+}
+
+@keyframes apareDefinitia {
+	0% {
+		left: 1350px;
+	}
+	100% {
+		left: 0;
+	}
+
+}
