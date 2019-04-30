@@ -72,9 +72,9 @@ header.changeColor {
 .menu-links {
 	background: #6991c7;
 	position: absolute;
-	top: 74px;
 	right: 0;
 	left: 0;
+
 }
 
 #menu-input:checked + .menu-label + .menu-links {
@@ -254,7 +254,7 @@ footer {
 }
 
 .apareDefinitia {
-	animation: apareDefinitia 2s 1;
+	animation: apareDefinitia 1.3s 1;
 }
 
 @keyframes apareDefinitia {
@@ -278,14 +278,20 @@ footer {
 	box-shadow: 0 0 10px 3px gray;
 }
 
+.tipuriColoranti h2 {
+	font-size: 1.3rem;
+}
+
 .tip h3 {
 	margin: 1.5rem;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }
 
 .tip p {
 	margin: 0 3rem;
 	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+	text-align: justify;
 }
 
 .tip img {
@@ -331,6 +337,23 @@ footer {
 	padding: 1rem 0;
 }
 
+.observatii li,
+.concluzii li {
+	font-size: 1.1rem;
+	padding: 0.44rem 0;
+	line-height: 1.5;
+}
+
 .tipuriColoranti {
 	padding: 1rem 2rem;
+}
+
+.concluzii {
+	background-color: darkorange;
+	color: white;
+	padding: 2rem 4rem;
+}
+
+.animation-text {
+	font-size: 1.2rem;
 }

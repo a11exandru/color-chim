@@ -9,11 +9,11 @@ window.addEventListener('scroll', () => {
 	logo.style.height = '60px';
 	logo.style.width = '130px';
 
-	if (window.scrollY > 140) {
+	if (window.scrollY > 130) {
 		animatie.classList.add('apareDefinitia');
 	}
 
-	if (window.scrollY > 150) {
+	if (window.scrollY > 240) {
 		toTop.style.opacity = "1";
 	}
 
@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
 		logo.style.width = '170px';
 	}
 
-	if(window.scrollY > 670) {
+	if(window.scrollY > 675) {
 		tipTitlu.style.opacity = "1";
 	}
 })
