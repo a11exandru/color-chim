@@ -24,11 +24,12 @@
 				<span class='fa fa-bars'></span>
 			</label>
 			<ul class='menu-links'>
-				<li><a href="#top">Pagina de pornire</a></li>
-				<li><a href="#team">Echipa</a></li>
+				<li><a href="#top", onclick="ascundeMeniu()">Pagina de pornire</a></li>
+				<li><a href="#tipuriColoranti", onclick="ascundeMeniu()">Clasificare</a></li>
 			</ul>
 		</nav>
 	</header>
+	
 	<!-- aici incepe continutul -->
 	<div class='title'>
 		<h1 class='title-text'>Coloranti</h1>
@@ -37,11 +38,47 @@
 	<a class = "toTop" href = "#top">
 		<span class="fas fa-angle-up"></span>
 	</a>
+
 	<div id='content'></div>
 	<div class='content'>
+		<!-- Definitie coloranti -->
 		<div class="definitie">
-			<h1>Ce sunt colorantii?</h1>
-			<p class="animation-text">Fusce ac ante scelerisque, tristique est quis, semper nibh. Pellentesque non porttitor libero, interdum luctus magna. Morbi rhoncus urna vel mauris commodo condimentum. Fusce id pharetra sem. Phasellus eu orci quam. Duis tempus rutrum faucibus. Mauris ultricies varius arcu, non ornare ipsum condimentum sed. Vivamus ullamcorper purus at enim sagittis dignissim. Sed condimentum, eros ac tincidunt scelerisque, odio ligula tincidunt nibh, vitae maximus tortor ante at purus. Cras interdum elit ac varius consequat.</p>
+			<h1 class="titlu">Ce sunt colorantii?</h1>
+			<p class="animation-text">Un <b>colorant</b> este o substanta organica sintetica sau naturala, care are o culoare proprie, si care are proprietatea de a colora substraturile pe care este aplicata (textile, ceramica, piele, hartie, etc.).</p>
+		</div>
+		<div class="observatii">
+			<h1 class="titlu">Observatii</h1>
+			<ul>
+				<li>Pentru ca o molecula organica sa posede o culoare proprie bine definita, ea trebuie sa includa in structura grupe de atomi, numite grupe <i>cromofore</i> sau <i>cromofori</i>.</li>
+				<li>In general, existenta culorii este legata de prezenta dublelor legaturi conjugate intr-o molecula.</li>
+				<li>Substantele care contin in molecula lor unul sau mai multi cromofori se numesc <i>cromogene</i> si sunt colorate</li>
+				<li>Pentru ca o substanta <b>colorata</b> sa devina si <b>coloranta</b> (sa poata colora la randul ei), trebuie sa contina in molecula, pe langa cromofori si alte grupe, numite <i>auxocrome</i>. Grupele auxocrome imprima substantei proprietatea de a colora, produce totodata o intensificare a culorii si dau o nuanta mai inchisa culorii existente in absenta lor.</li>
+			</ul>
+		</div>
+
+		<!-- Tipuri de coloranti -->
+		<div id="tipuriColoranti"></div>
+		<div class="titlu tipColorantiTitlu">Clasificarea colorantilor</div>
+		<div class="tipuriColoranti">
+			<h2>Colorantii organici pot fi clasificati dupa provenienta lor in: <u>coloranti naturali</u> si <u>coloranti de sinteza</u>.</h2>
+			<div class="tip">
+				<h3>1. Coloranti organici naturali</h3>
+				<div class="display-flex">
+					<p>Vrajeala despre ei</p>
+					<div class="background-image">
+						<img src="images/coloranti-naturali.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="tip">
+				<h3>2. Coloranti organici de sinteza</h3>
+				<div class="display-flex">
+					<p>Vrajeala despre ei</p>
+					<div class="background-image">
+						<img src="images/coloranti-de-sinteza.jpg">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -49,11 +86,6 @@
 
 
 
-
-<!-- sageata catre top -->
-<!-- <a href="#top" class = 'top-arrow'>
-	<span>Top &uarr;</span>
-</a>
 <!-- footerul -->
 <!-- <footer> &copy; Alex & Rares </footer> -->
 

@@ -53,7 +53,7 @@ header.changeColor {
 
 .menu-label span:hover {
 	color: gray;
-	transition: 0.2s;
+	transition: 0.44s;
 }
 
 .menu-links a {
@@ -237,11 +237,12 @@ footer {
 	position: relative;
 }
 
-.definitie h1 {
+.titlu {
 	font-size: 2.5rem;
 	text-align: center;
-	padding: 5rem 0 5rem 0;
+	padding: 2rem 0 2rem 0;
 	width: 100%;
+	color: white;
 }
 
 .definitie p {
@@ -264,4 +265,72 @@ footer {
 		left: 0;
 	}
 
+}
+
+
+/*tipuri de coloranti*/
+
+.tipColorantiTitlu {
+	background-image: url(images/tipuri-coloranti-background.jpg);
+	opacity: 0;
+	transition: 1.55s;
+	color: black;
+	box-shadow: 0 0 10px 3px gray;
+}
+
+.tip h3 {
+	margin: 1.5rem;
+	font-size: 1.3rem;
+}
+
+.tip p {
+	margin: 0 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.tip img {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 50%;
+	/*border: 0.1rem solid red;*/
+}
+
+@media screen and (min-width: 768px) {
+	.display-flex {
+		display: flex;
+	}
+
+	.tip p {
+		width: 50%;
+		margin: 0 5rem;
+	}
+
+	.tip img {
+		width: 300px;
+		height: 300px;
+	}
+
+	.tip .background-image {
+		width: 50%;
+		transform: translate(0, -15px);
+	}
+}
+
+.observatii {
+	background-color: purple;
+	color: white;
+	padding: 2rem 4rem;
+}
+
+.observatii ul {
+	padding: 1rem 0;
+}
+
+.tipuriColoranti {
+	padding: 1rem 2rem;
 }

@@ -4,11 +4,14 @@ window.addEventListener('scroll', () => {
 	let menuLinks = document.querySelector('.menu-links');
 	let animatie = document.querySelector('.animation-text');
 	let toTop = document.querySelector('.toTop');
-	// header.style.background = 'linear-gradient(to right, #141E30, #243B55)';
+	let tipTitlu = document.querySelector('.tipColorantiTitlu');
 	header.style.background = '#111';
 	logo.style.height = '60px';
 	logo.style.width = '130px';
-	animatie.classList.add('apareDefinitia');
+
+	if (window.scrollY > 140) {
+		animatie.classList.add('apareDefinitia');
+	}
 
 	if (window.scrollY > 150) {
 		toTop.style.opacity = "1";
@@ -23,4 +26,14 @@ window.addEventListener('scroll', () => {
 		logo.style.height = '70px';
 		logo.style.width = '170px';
 	}
+
+	if(window.scrollY > 670) {
+		tipTitlu.style.opacity = "1";
+	}
 })
+
+// ascunde meniul in phone mode cand este apasat un link din meniu.
+const ascundeMeniu = () => {
+	let input = document.getElementById('menu-input');
+	input.checked = false;
+}
