@@ -25,6 +25,10 @@ header.changeColor {
 	background: black;
 }
 
+.menu {
+	transition: 0.66s;
+}
+
 .logo {
 	padding: 0.3rem 0.5rem 0.1rem 0.5rem;
 }
@@ -134,18 +138,7 @@ header.changeColor {
 @media screen and (max-width: 1000px) {
 	#menu-input:checked + .menu-label + .menu-links {
 		top: 70px;
-}
-}
-
-
-/*footer styling*/
-footer {
-	text-align: center;
-	margin-top: 2rem;
-	background: linear-gradient(to left, #09203f  , #537895);
-	color: white;
-	padding: 1rem;
-	font-size: 1.5rem;
+	}
 }
 
 .top-arrow {
@@ -153,7 +146,7 @@ footer {
 	padding-right: 1rem;
 	font-size: 1.1rem;
 	text-decoration: #09203f;
-	color: black;
+	color: #111;
 }
 
 .menu ul {
@@ -233,7 +226,6 @@ footer {
 	padding: 20px 40px;
 	background-color: red;
 	color: white;
-	height: 100%;
 	position: relative;
 }
 
@@ -275,7 +267,7 @@ footer {
 	opacity: 0;
 	transition: 1.55s;
 	color: black;
-	box-shadow: 0 0 10px 3px gray;
+	box-shadow: 0 0 10px 5px gray;
 }
 
 .tipuriColoranti h2 {
@@ -306,7 +298,7 @@ footer {
 	/*border: 0.1rem solid red;*/
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
 	.display-flex {
 		display: flex;
 	}
@@ -357,3 +349,108 @@ footer {
 .animation-text {
 	font-size: 1.2rem;
 }
+
+/*styling the footer*/
+
+footer {
+	background: #111;
+	color: white;
+}
+
+footer h2 {
+	text-align: center;
+	font-size: 1.6rem;
+	padding: 1rem;
+	text-decoration: underline;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer span {
+	color: white;
+	transition: 0.33s;
+	padding: 0 0.32rem; 
+}
+
+footer span:hover {
+	transform: scale(1.2);
+	color: gray;
+}
+
+footer h3 {
+	margin-right: 1rem;
+	font-size: 1.33rem;
+}
+
+footer i {
+	font-style: initial;
+	font-weight: normal;
+}
+
+.elevi {
+	border-bottom: 3px solid lightgray;
+	margin: 0 0.6rem;
+	padding-bottom: 1rem;
+}
+
+.creatorWeb, .imagini,
+.prof-info, .prof-chimie {
+	display: flex;
+	padding: 0.7rem 3rem;
+}
+
+/*footer in desktop mode*/
+
+@media screen and (min-width: 1000px) {
+	footer {
+		display: flex;
+	}
+
+	footer > div {
+		width: 50%;
+	}
+
+	footer h2 {
+		text-align: left;
+		padding-left: 3rem;
+	}
+
+	.elevi {
+		border-right: 3px solid lightgray;
+		margin: 0.6rem 0;
+		border-bottom: 0;
+		padding: 0;
+	}
+
+	.creatorWeb, .imagini,
+	.prof-info, .prof-chimie {
+		padding: 0.7rem 5.5rem;
+		display: block;
+		text-align: center;
+	}
+
+	footer h3 {
+		margin: 0.6rem 0;
+	}
+}
+
+/*pentru phone mode*/
+
+/*@media screen and (max-width: 1000px) {
+	.toTop {
+		width: 70px;
+		height: 70px;
+		font-size: 2.5rem;
+	}
+
+	footer h3,
+	footer a  {
+		font-size: 2.2rem;
+	}
+
+	.menu {
+		font-size: 1.9rem;
+	}
+}*/

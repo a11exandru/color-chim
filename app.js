@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
 		logo.style.width = '170px';
 	}
 
-	if(window.scrollY > 675) {
+	if(window.scrollY > 900) {
 		tipTitlu.style.opacity = "1";
 	}
 })

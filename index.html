@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- pt iconitele de la footer -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
@@ -24,8 +26,11 @@
 				<span class='fa fa-bars'></span>
 			</label>
 			<ul class='menu-links'>
-				<li><a href="#top", onclick="ascundeMeniu()">Pagina de pornire</a></li>
+				<li><a href="#top", onclick="ascundeMeniu()">Coloranti</a></li>
+				<li><a href="#definitie", onclick="ascundeMeniu()">Definitie</a></li>
+				<li><a href="#observatii", onclick="ascundeMeniu()">Observatii</a></li>
 				<li><a href="#tipuriColoranti", onclick="ascundeMeniu()">Clasificare</a></li>
+				<li><a href="#concluzii", onclick="ascundeMeniu()">Concluzii</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -42,10 +47,12 @@
 	<div id='content'></div>
 	<div class='content'>
 		<!-- Definitie coloranti -->
+		<div id="definitie"></div>
 		<div class="definitie">
 			<h1 class="titlu">Ce sunt colorantii?</h1>
 			<p class="animation-text">Un <b>colorant</b> este o substanta organica sintetica sau naturala, care are o culoare proprie, si care are proprietatea de a colora substraturile pe care este aplicata (textile, ceramica, piele, hartie, etc.).</p>
 		</div>
+		<div id="observatii"></div>
 		<div class="observatii">
 			<h1 class="titlu">Observatii</h1>
 			<ul>
@@ -90,7 +97,7 @@
 				<li>Colorantii sunt substante ce poseda culoare proprie si sunt capabili sa confere culoare unor substraturiprintr-un proces de fixare. Ei pot fi naturali sau de sinteza.</li>
 				<li>Orice colorant contine in molecula un <b>cromofor</b> si <b>auxocromi</b>.</li>
 				<li>Dupa modul de fixare, colorantii pot fi: acizi (vopsesc lana si poliamidele), directi (vopsesc celuloza), de cada (vopsesc bumbacul) si pigmenti care, inclusi in produse peliculogene, conduc la vopsele.</li>
-				<li>Colorantii alimentari pot fi naturali sau sintetici si sunt indicati pe etivhetele produselor alimentare sub numere de cod, care urmeaza literei E.</li>
+				<li>Colorantii alimentari pot fi naturali sau sintetici si sunt indicati pe etivhetele produselor alimentare sub numere de cod, care urmeaza literei <b>E</b>.</li>
 			</ol>
 		</div>
 	</div>
@@ -100,7 +107,52 @@
 
 
 <!-- footerul -->
-<!-- <footer> &copy; Alex & Rares </footer> -->
+	<footer>
+		<div class="elevi">
+			<h2>Elevi</h2>
+			<div class="creatorWeb">
+				<h3>Puiu Alexandru</h3>
+				<div class="iconite">
+					<a href="https://www.facebook.com/a11exandru">
+						<span class="fa fa-facebook-official"></span>
+					</a>
+					<a href="https://github.com/a11exandru">
+						<span class="fa fa-github"></span>
+					</a>
+					<a href="https://linkedin.com/in/a11exandru/">
+						<span class="fa fa-linkedin"></span>
+					</a>
+				</div>
+			</div>
+			<div class="imagini">
+				<h3>Ungureanu Rares</h3>
+				<div class="iconite">
+					<a href="https://www.facebook.com/profile.php?id=100008947219424">
+						<span class="fa fa-facebook-official"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="profesori">
+			<h2>Profesori coordonatori</h2>
+			<div class="prof-info">
+				<h3>Cosnita Otilia <i>(profesor informatica)<i></h3>
+				<div class="iconite">
+					<a href="https://www.facebook.com/otilia.cosnita">
+						<span class="fa fa-facebook-official"></span>
+					</a>
+				</div>
+			</div>
+			<div class="prof-chimie">
+				<h3>Cornea Elena <i>(profesor chimie)</i></h3>
+				<div class="iconite">
+					<a href="https://www.facebook.com/elena.cornea.714">
+						<span class="fa fa-facebook-official"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
