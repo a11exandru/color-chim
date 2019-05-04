@@ -64,7 +64,7 @@ header.changeColor {
 .menu-links a {
 	display: block;
 	color: white;
-	padding: 0.5rem 1rem;
+	padding: 0.3rem 1rem;
 	text-decoration: none;
 	transition: 0.55s;
 	font-size: 1.3rem;	
@@ -132,7 +132,7 @@ header.changeColor {
 }
 
 .toTop span {
-	font-size: 1.3rem;
+	font-size: 1.33rem;
 }
 
 .toTop:hover {
@@ -170,10 +170,10 @@ header.changeColor {
 .title-text {
 	position: absolute;
 	font-size: 4rem;
-	top: 47%;
+	top: 50%;
 	left: 50%;
 	/*margin-left: -140px;*/
-	transform: translate(-50%,-40%);
+	transform: translate(-48%,-50%);
 	color: white;
 	animation: changeColors 8s infinite;
 }
@@ -181,9 +181,9 @@ header.changeColor {
 .arrow-down {
   width: 0;
   height: 0; 
-  border-left: 28px solid transparent;
-  border-right: 28px solid transparent;  
-  border-top: 28px solid white;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;  
+  border-top: 30px solid white;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -235,7 +235,7 @@ header.changeColor {
 }
 
 .titlu {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-align: center;
 	padding: 2rem 0 2rem 0;
 	width: 100%;
@@ -395,7 +395,7 @@ footer i {
 }
 
 .elevi {
-	border-bottom: 3px solid lightgray;
+	border-bottom: 2px solid lightgray;
 	margin: 0 0.6rem;
 	padding-bottom: 1rem;
 }
@@ -423,7 +423,7 @@ footer i {
 	}
 
 	.elevi {
-		border-right: 3px solid lightgray;
+		border-right: 2px solid lightgray;
 		margin: 0.6rem 0;
 		border-bottom: 0;
 		padding: 0;
