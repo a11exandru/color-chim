@@ -10,6 +10,7 @@ html {
 }
 
 header {
+	height: 70px;
 	display: flex;
 	background: linear-gradient(to left, #09203f  , #537895);
 	justify-content: space-between;
@@ -63,9 +64,10 @@ header.changeColor {
 .menu-links a {
 	display: block;
 	color: white;
-	padding: 0.4rem 0.8rem;
+	padding: 0.5rem 1rem;
 	text-decoration: none;
-	transition: 0.55s;	
+	transition: 0.55s;
+	font-size: 1.3rem;	
 }
 
 .menu-links a:hover {
@@ -112,15 +114,14 @@ header.changeColor {
 }
 
 .toTop {
-	border-top-right-radius: 0.3rem;
-	border-top-left-radius: 0.3rem;
+	border-radius: 50%;
 	z-index: 3;
 	position: fixed;
-	bottom: 0;
-	right: 0rem;
+	bottom: 9px;
+	right: 9px;
 	background-color: black;
-	width: 36px;
-	height: 36px;
+	width: 46px;
+	height: 46px;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -128,6 +129,10 @@ header.changeColor {
 	color: white;
 	opacity: 0;
 	transition: 0.44s;
+}
+
+.toTop span {
+	font-size: 1.3rem;
 }
 
 .toTop:hover {
@@ -174,11 +179,11 @@ header.changeColor {
 }
 
 .arrow-down {
-  width: 0; 
+  width: 0;
   height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;  
-  border-top: 20px solid white;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;  
+  border-top: 28px solid white;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -207,9 +212,9 @@ header.changeColor {
 
 
 @keyframes changeColors {
-  	0%{color: #FF4B2B;}
-  	25%{color: #fed766;}
-  	50%{color: #a8ff78;}
+  	0%{color: #fc6767;}
+  	25%{color: #a8ff78;}
+  	50%{color: #d10445;}
   	75%{color: #fe8a71;}
   	100%{color: #fc6767;}
 }
@@ -359,7 +364,7 @@ footer {
 
 footer h2 {
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	padding: 1rem;
 	text-decoration: underline;
 }
@@ -381,7 +386,7 @@ footer span:hover {
 
 footer h3 {
 	margin-right: 1rem;
-	font-size: 1.33rem;
+	font-size: 1.54rem;
 }
 
 footer i {
