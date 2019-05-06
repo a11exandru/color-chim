@@ -169,7 +169,7 @@ header.changeColor {
 
 .title-text {
 	position: absolute;
-	font-size: 4rem;
+	font-size: 5.5rem;
 	top: 50%;
 	left: 50%;
 	/*margin-left: -140px;*/
@@ -395,6 +395,7 @@ footer span:hover {
 footer h3 {
 	margin-right: 1rem;
 	font-size: 1.54rem;
+	letter-spacing: 1.6px;
 }
 
 footer i {
@@ -451,4 +452,14 @@ footer i {
 
 .background-image img {
 	margin: 1.5rem 0;
+}
+
+.background-image div {
+	position: relative;
+}
+
+.background-image p {
+	position: absolute;
+	bottom: -40px;
+	left: 55%;
 }
