@@ -229,7 +229,7 @@ header.changeColor {
 
 .definitie {
 	padding: 20px 40px;
-	background-color: red;
+	background-color: purple;
 	color: white;
 	position: relative;
 }
@@ -281,17 +281,18 @@ header.changeColor {
 
 .tip h3 {
 	margin: 1.5rem;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 .tip p {
-	margin: 0 3rem;
+	margin: 0 2.5rem;
 	margin-bottom: 1.5rem;
 	font-size: 1.1rem;
 	text-align: justify;
 }
 
 .tip img {
+	display: block;
 	width: 250px;
 	height: 250px;
 	position: relative;
@@ -300,7 +301,15 @@ header.changeColor {
 	left: 50%;
 	transform: translate(-50%, 0);
 	border-radius: 50%;
-	/*border: 0.1rem solid red;*/
+	box-shadow: 0 0 10px 3px gray;
+}
+
+.no-box-shadow {
+	box-shadow: none!important;
+}
+
+.display-flex p {
+	text-indent: 30px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -308,9 +317,8 @@ header.changeColor {
 		display: flex;
 	}
 
-	.tip p {
+	.display-flex .text {
 		width: 50%;
-		margin: 0 5rem;
 	}
 
 	.tip img {
@@ -325,7 +333,7 @@ header.changeColor {
 }
 
 .observatii {
-	background-color: purple;
+	background-color: red;
 	color: white;
 	padding: 2rem 4rem;
 }
@@ -441,21 +449,6 @@ footer i {
 	}
 }
 
-/*pentru phone mode*/
-
-/*@media screen and (max-width: 1000px) {
-	.toTop {
-		width: 70px;
-		height: 70px;
-		font-size: 2.5rem;
-	}
-
-	footer h3,
-	footer a  {
-		font-size: 2.2rem;
-	}
-
-	.menu {
-		font-size: 1.9rem;
-	}
-}*/
+.background-image img {
+	margin: 1.5rem 0;
+}
